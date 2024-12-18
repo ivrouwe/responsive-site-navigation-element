@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Responsive Site Navigation Element Example</title>
+
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body>
+    <header>
+        <p class="skip-link"><a href="#main">Skip to main content</a></p>
+
+        <p class="website-name"><a href="/" aria-current="page">Website Name</a></p>
+
+        <nav
+            id="navigation--site-navigation"
+            aria-labelledby="site-navigation__fragment--site"
+            is="responsive-site-navigation-element"
+        >
+            <h2
+                id="site-navigation"
+                class="visually-hidden"
+            ><span id="site-navigation__fragment--site">Site</span> Navigation</h2>
+
+            <ul>
+                <li>
+                    <a href="page-two">Page Two</a>
+                </li>
+
+                <li>
+                       <a href="/page-three">Page Three</a>
+                </li>
+
+                <li>
+                    <a href="/page-four">Page Four</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h1
+            id="main"
+            tabindex="-1"
+        >Welcome to Website Name!</h1>
+
+        <p>Some content.</p>
+    </main>
+
+    <!-- A local copy of [WebReflection/custom-elements-builtin](https://github.com/WebReflection/custom-elements-builtin) -->
+    <script src="assets/js/webreflection-custom-elements-builtin-safari-polyfill.js"></script>
+
+    <script src="assets/js/custom-element-helpers.js"></script>
+
+    <script src="assets/js/dialog-modal-element.js"></script>
+
+    <script src="assets/js/responsive-site-navigation-element.js"></script>
+</body>
+</html>
