@@ -157,6 +157,8 @@ header > nav[is="responsive-site-navigation-element"] {
     /* Modified styles for the custom element (if it is succesfully loaded/progressively-enhanced) */
     &[data-defined="true"] {
         container-type: inline-size;
+        display: flex;
+        justify-content: end;
 
         > [is="dialog-modal-element"] {
             height: 100%;
@@ -281,4 +283,9 @@ header > nav[is="responsive-site-navigation-element"] {
             }
         }
     }
+}
+
+button {
+    background-color: #efefef;
+    color: var(--color);
 }
